@@ -1,0 +1,9 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Pictures/ervo-rocks-Zam8TvEgN5o-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
