@@ -7,4 +7,48 @@
     position: absolute;
     left: 0;
     top: 0;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+
+.container h1{
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    color: aliceblue;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.TopSection{
+    height: 20%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url(Pictures/Heading\ Cover.jpg);
+}
+
+.slogan{
+    font-size: 22px;
+    color: aliceblue;
+    margin: 0;
+}
+
+form{
+    position: relative;
+    display: flex;
+    width: 500px;
+}
+
+input{
+    width: 100%;
+    max-width: 100%;
+    height: 20px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
