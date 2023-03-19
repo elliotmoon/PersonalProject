@@ -90,41 +90,4 @@
       <h1>Results will be displayed here</h1>
     </section>
   </body>
-
-  const numbers = [2 , 4, 6, 8];
-const tripleNo = numbers.map(tripleNum);
-function tripleNum(number) {
-   return number * 3;
-}
-console.log(tripleNo);//logs [6,12,18,24]
-
-//event listener in get lyrics button
-output.addEventListener('click', e=>{
-    const clickedElement = e.target;
-
-    //checking clicked element is button or not
-    if (clickedElement.tagName === 'SPAN'){
-        const artist = clickedElement.getAttribute('data-artist');
-        const songTitle = clickedElement.getAttribute('data-songtitle');
-        
-        getLyrics(artist, songTitle);
-    }
-})
-
-async function getLyrics(artist, songTitle) {
-  const response = await fetch(`${api}/v1/${artist}/${songTitle}`);
-  const data = await response.json();
-
-  const lyrics = data.lyrics;
-  if (lyrics === undefined){
-      alert('lyrics doesnt exist in this api');
-      console.log('lyrics doesnt exist in this api');
-  }
-
-  output.innerHTML = `<h2><strong>${artist}</strong> - ${songTitle}</h2>
-  <p id="lyrics-display">${lyrics}</p>`; 
-}
-
-const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g ,'<br>');
-.
 </html>
