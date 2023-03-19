@@ -14,7 +14,6 @@
       <div class="container">
         <div class="TopSection">
           <h1>Song Scavenger</h1>
-
           <p class="slogan">
             Trying to find the lyrics to that one song? Type the artist's name
             or song down below!
@@ -31,9 +30,101 @@
         </div>
       </div>
     </header>
+    <div class="box">
+      <div class="boxLeft">
+          <div class="titleLeft">
+              <h3>Artists/Songs related to your search</h3>
+          </div>
+          <div>
+              <p class="placeholderLeft">Enter any Artists/Songs above!</p>
+          </div>
+          <div class="scrollLeft">
+              <ul class="dishList"></ul>
+          </div>
+      </div>
+
+      <div class="boxRight">
+          <div class="titleRight">
+              <h3>Songs Lyrics</h3>
+          </div>
+          <div>
+              <p class="placeholderRight">Select the song to get the lyrics!</p>
+          </div>
+          <div class="scrollRight">
+              <div class = "info">
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+<div class= "content">
+  <div class="left-col">
+      <h1>Song<br>of<br>the<br>Day</h1>
+</div>
+  <div class="right-col">
+    <p>Click Here To Listen</p>
+    <img src="Pictures/Play Logo.png" id="icon">
+  </div>
+</div>
+
+  <audio id="mySong">
+      <source src="SZA x Calvin Harris - The Weekend (Funk Wav Remix (Audio)).mp3" type="audio/mp3">
+  </audio>
+
+ </body>
+
+ <footer class="footer">
+  <p>Created by Myung Hoon Moon (Elliot) © September 2022
+      <mark class="mark"> | </mark>
+      <a href="https://github.com/elliotmoon/PersonalProject" target="_blank">
+          GitHub</a>
+      <mark class="mark"> | </mark>
+      Powered by Genius Lyrics API
+  </p>
+ </footer>
+
+ <script src="main.js"></script>
 
     <section class="result">
       <h1>Results will be displayed here</h1>
     </section>
   </body>
+
+  const numbers = [2 , 4, 6, 8];
+const tripleNo = numbers.map(tripleNum);
+function tripleNum(number) {
+   return number * 3;
+}
+console.log(tripleNo);//logs [6,12,18,24]
+
+//event listener in get lyrics button
+output.addEventListener('click', e=>{
+    const clickedElement = e.target;
+
+    //checking clicked element is button or not
+    if (clickedElement.tagName === 'SPAN'){
+        const artist = clickedElement.getAttribute('data-artist');
+        const songTitle = clickedElement.getAttribute('data-songtitle');
+        
+        getLyrics(artist, songTitle);
+    }
+})
+
+async function getLyrics(artist, songTitle) {
+  const response = await fetch(`${api}/v1/${artist}/${songTitle}`);
+  const data = await response.json();
+
+  const lyrics = data.lyrics;
+  if (lyrics === undefined){
+      alert('lyrics doesnt exist in this api');
+      console.log('lyrics doesnt exist in this api');
+  }
+
+  output.innerHTML = `<h2><strong>${artist}</strong> - ${songTitle}</h2>
+  <p id="lyrics-display">${lyrics}</p>`; 
+}
+
+const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g ,'<br>');
+.
 </html>

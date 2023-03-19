@@ -7,8 +7,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;}
+
 
 .container h1{
     font-size: 42px;
@@ -18,30 +18,30 @@
     color: white;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     padding-top: 10px;
-    margin: 0;
-}
+    margin: 0;}
+
 
 .TopSection{
-    height: 20%;
+    height: 17%;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-image: url(Pictures/Heading\ Cover.jpg);
-}
+    background-image: url(Pictures/Heading\ Cover.jpg);}
+
 
 .slogan{
     font-size: 22px;
     color: white;
     margin: 0;
-    text-align: center;
-}
+    text-align: center;}
+
 
 form{
     position: relative;
     display: flex;
     width: 500px;
-    margin: auto;
-}
+    margin: auto;}
+
 
 input{
     width: 100%;
@@ -51,8 +51,8 @@ input{
     border-radius: 50px;
     border: none;
     outline: none;
-    font-size: 16px;
-}
+    font-size: 16px;}
+
 
 button{
     width: 100px;
@@ -67,10 +67,123 @@ button{
     top: 2px;
     font-weight: 600;
     outline: none;
-    font-size: 16px;
-}
+    font-size: 16px;}
+
 
 button:hover{
-    transform: scale(0.96);
+    transform: scale(0.96);}
+
+
+.box {
+    font-family: "Tahoma", Geneva, sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    position: relative;
+    top: 25px;
+    width: 70%;
+    bottom: 30%;
+    margin: 0 auto;}
+
+
+.boxLeft {
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px 5px #e9e4d5;
+        position: absolute;
+        background: #FBFAF7;
+        right: 58%;
+        top: 145px;
+        height: 450px;
+        width: 47%;}
+
+
+.boxRight {
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px 5px #e9e4d5;
+        position: absolute;
+        background: #FBFAF7;
+        left: 48%;
+        top: 145px;  
+        height: 450px;
+        width: 68%;}
+
+
+titleLeft, .titleRight {
+        margin-top: -15px;
+        margin-bottom: -10px;
+        font-size: 18px;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+        font-weight: bold;}
+
+    
+.placeholderLeft, .placeholderRight {
+        padding-bottom: 7px;
+        border-bottom: 1px solid lightgray;}
+
+    
+.scrollLeft, .scrollRight {
+        height: 350px;
+        overflow: hidden;
+        overflow-y: scroll;}
+ 
+
+.listElement:hover {
+        text-decoration: underline;
+        cursor: pointer;}
+
+
+.link {
+    padding-bottom: 10px;}
+
+
+.footer {
+    color: black;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;}
+
+
+.mark {
+    background: none;
+    color: gray;}
+
+
+.left-col{
+    margin-left: 6%;
+    }
+
+
+.left-col h1 {
+    font-size: 90px;
+    color: #FBFAF7
+    line-height: 110px;
+    float: :left;
+}
+
+.right-col{
+    float:right;
+    margin-right: 6%;
+    margin-top: 120px:
+    display: flex;
+    align-items: center;
+}
+
+
+.right-col p{
+    font-size: 18px;
+    color: #5f5f55;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+
+#icon{
+    width: 80px;
+    cursor: pointer;
 }
 
