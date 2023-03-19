@@ -160,19 +160,18 @@ titleLeft, .titleRight {
 
 .left-col h1 {
     font-size: 90px;
-    color: #FBFAF7
+    color: #FBFAF7;
     line-height: 110px;
-    float: :left;
+    float:left;
 }
 
 .right-col{
     float:right;
     margin-right: 6%;
-    margin-top: 120px:
+    margin-top: 120px;
     display: flex;
     align-items: center;
 }
-
 
 .right-col p{
     font-size: 18px;
